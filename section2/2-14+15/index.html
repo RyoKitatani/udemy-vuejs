@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="../../scripts/vue.js"></script>
+
+  <div id="app">
+    <a :[attribute]="url">Google</a>
+    <a v-bind="twitterObject">Twitter</a>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+
+<!-- 
+  v-bindを使用して、オブジェクト形式で記載することも可能
+  v-bind="{href: "https://twitter.com:",id: number}""
+-->
