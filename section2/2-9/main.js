@@ -7,7 +7,7 @@ new Vue({
   },
   methods: {
     sayHi: function() {
-      return 'Hi';
+      return this.message;
     }
   }
 })
