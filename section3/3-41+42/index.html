@@ -11,7 +11,7 @@
   
   <div id="app">
     <ul>
-      <li v-for="value in fruits">{{value}}</li>
+      <li v-for="(value, index) in fruits">({{index}}){{value}}</li>
     </ul>
   </div>
   <script src="main.js"></script>
