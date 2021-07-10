@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="../../scripts/vue.js"></script>
+  
+  <div id="app">
+    <h1 :class="classObject">Hello</h1>
+    <button @click="isActive = !isActive">切り替え</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+
+<!-- 
+ バイディングについて　紐付け
+ 1
+ true and false で適応するクラスを変化できる
+ 2
+ 動的にクラスを書く
+ -->
