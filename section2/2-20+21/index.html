@@ -16,18 +16,22 @@
       <span v-on:mousemove.stop="">反応しないでください</span></p>
       <a v-on:click.prevent="noEvent" href="https://google.com">google</a>
     <p>x:{{x}}、 Y:{{y}}</p>
+    <input type="text" v-on:keyup.enter="myAlert">
   </div>
   <script src="main.js"></script>
 </body>
 </html>
-
-<!-- 
-  v-on
-
- -->
 
  <!-- 
  preventDefault()
  デフォルトの挙動を防ぐ
 
   -->
+
+  <!-- 
+    キー修飾子
+    .enter エンター押した瞬間に実行される
+    .space スペース押した瞬間
+
+    併用可能
+   -->
