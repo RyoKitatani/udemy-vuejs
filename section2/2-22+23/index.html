@@ -11,7 +11,7 @@
   
   <div id="app">
     <p>現在{{number}}回クリックされています。</p>
-    <button v-on:[event]="countUP">カウントアップ</button>
+    <button @[event]="countUP">カウントアップ</button>
   </div>
   <script src="main.js"></script>
 </body>
@@ -20,4 +20,7 @@
  <!-- 
  jsにevent を記述
  []でhtml上に記述可能
+
+ v-on: @ で省略可能
    -->
+
