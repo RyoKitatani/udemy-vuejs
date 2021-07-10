@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="../../scripts/vue.js"></script>
+  
+  <div id="app">
+    <button @click="ok = !ok">ボタン</button>
+    <p v-if="ok">if</p>
+    <p v-show="ok">show</p>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+
+<!-- 
+
+  v-show
+  あくまでも要素ごと消す、display: noneにしている
+
+  templateタグでは使えない
+
+  メリット
+  頻繁に切り替える際は、v-show
+
+  デメリット
+  初期描画が遅い
+
+  v-if
+  デメリット
+  押すたびに削除しているため、同様にコストが高い
+
+  メリット
+  初期値と変わらない場合、
+ -->
