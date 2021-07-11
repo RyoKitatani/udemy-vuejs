@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="../../scripts/vue.js"></script>
+  
+  <div id="app">
+    <ul>
+      <div v-for="value of fruits" :key="value">
+        <p>{{value}}</p>
+        <input type="text">
+      </div>
+    </ul>
+    <button @click="remove">先頭を削除</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+
+<!-- 
+
+  v-for
+  key属性
+
+  : v-bind 
+  :key=""で紐づける
+
+  .shift 先頭を取り出す
+ -->
