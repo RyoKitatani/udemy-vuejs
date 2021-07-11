@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="../../scripts/vue.js"></script>
+  
+  <div id="app1">
+    <p>{{message}}</p>
+  </div>
+  <div id="app2">
+    <p>{{message}}</p>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+
+<!-- 
+  複数インスタンスを使用する場合は、
+  それぞれが独立した場合のみ使用は良いかもしれないが
+  なるべく1つに求めた方がシンプル
+ -->
